@@ -1,2 +1,2 @@
 # Project1
-Displays congressional voting records and related news articles on selected politician.
+Provide up to date disaster information so a user can find the best way to help.
