@@ -1,3 +1,63 @@
+<<<<<<< HEAD
+body {
+    background-image: url("stormBG.jpg");
+}
+
+#headerDiv {
+    background-color: white;
+    text-align: center;
+    opacity: 0.7;
+    height: 300px;
+}
+
+#headerMainText {
+    font-size: 50px;
+    padding: 70px 0px 0px 0px;
+    font: helvetica, sans-serif;
+}
+
+#leftCol {
+    height: 800px;
+    margin: 20px 0px 0px 0px;
+    padding: 40px;
+}
+
+#rightCol {
+    height: 800px;
+    margin: 20px 0px 0px 0px;
+    padding: 0px 0px 0px 20px;
+}
+
+#topDiv {
+    height: 400px;
+}
+
+#bottomDiv {
+    height: 400px;
+}
+
+#cardHeader {
+    text-align: center;
+}
+
+#disasterContainer {
+    height: 200px;
+}
+
+#disasterButton {
+    margin: 5px 0px 5px 0px;
+    height: 60px;
+}
+
+#topDiv {
+    margin: 20px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
+}
+
+#headerText {
+    text-align: center;
+    font-size: 30px;
+=======
 body {
     background-image: url("stormBG.jpg");
 }
@@ -19,4 +79,5 @@ body {
 
 #bottomOne {
     height: 300px;
+>>>>>>> master
 }
