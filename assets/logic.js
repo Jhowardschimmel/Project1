@@ -36,10 +36,11 @@ $(document).ready(function () {
                 //create 10 buttons
                 function createButtons() {
                     var button = $('<button>').attr({
-                        class: "ui button"
+                        id: "disasterButton",
+                        class: "fluid ui teal button"
                     });
-                    $(button).text(`${results[i].fields.primary_type.name} : ${results[i].fields.primary_country.name}`);
-                    $("#disasterdiv").append(button);
+                    $(button).text(response.data[i].fields.name);
+                    $("#disasterDiv").append(button);
 
 
 
