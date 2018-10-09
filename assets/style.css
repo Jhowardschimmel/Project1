@@ -43,52 +43,7 @@ body {
     height: 200px;
 }
 
-#disasterButton0 {
-    margin: 5px 0px 5px 0px;
-    height: 60px;
-}
-
-#disasterButton1 {
-    margin: 5px 0px 5px 0px;
-    height: 60px;
-}
-
-#disasterButton2 {
-    margin: 5px 0px 5px 0px;
-    height: 60px;
-}
-
-#disasterButton3 {
-    margin: 5px 0px 5px 0px;
-    height: 60px;
-}
-
-#disasterButton4 {
-    margin: 5px 0px 5px 0px;
-    height: 60px;
-}
-
-#disasterButton5 {
-    margin: 5px 0px 5px 0px;
-    height: 60px;
-}
-
-#disasterButton6 {
-    margin: 5px 0px 5px 0px;
-    height: 60px;
-}
-
-#disasterButton7 {
-    margin: 5px 0px 5px 0px;
-    height: 60px;
-}
-
-#disasterButton8 {
-    margin: 5px 0px 5px 0px;
-    height: 60px;
-}
-
-#disasterButton9 {
+.fluid.ui.teal.button.DISBUTTON {
     margin: 5px 0px 5px 0px;
     height: 60px;
 }
