@@ -27,9 +27,7 @@ body {
     padding: 0px 0px 0px 20px;
 }
 
-#topDiv {
-    height: 400px;
-}
+
 
 #bottomDiv {
     height: 400px;
@@ -51,6 +49,9 @@ body {
 #topDiv {
     margin: 20px 0px 0px 0px;
     padding: 20px 0px 0px 0px;
+    height: 400px;
+    overflow-x: scroll;
+    overflow: scroll;
 }
 
 #headerText {
