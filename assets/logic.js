@@ -1,7 +1,7 @@
 function createButtons(i, response) {
   var button = $('<button>').attr({
     id: "disasterButton" + i, //+ i to assign incremented id's
-    class: "fluid ui teal button DISBUTTON"
+    class: "fluid ui orange button DISBUTTON"
   });
   $(button).text(response.data[i].fields.name);
   $("#disasterDiv").append(button);
@@ -46,7 +46,7 @@ $(document).ready(function () {
   function myMap(lat, lon) {
     var mapProp = {
       center: new google.maps.LatLng(lat, lon),
-      zoom: 4,
+      zoom: 6,
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
   }
