@@ -1,0 +1,109 @@
+body {
+    background-image: url("reliefBG.jpg");
+}
+
+#headerDiv {
+    background-color: white;
+    text-align: center;
+    opacity: 0.66;
+    height: 300px;
+}
+
+#headerMainText {
+    font-size: 50px;
+    padding: 70px 0px 0px 0px;
+    font: helvetica, sans-serif;
+}
+
+#leftCol {
+    height: 800px;
+    margin: 20px 0px 0px 0px;
+    padding: 40px 40px 40px 100px;
+}
+
+#rightCol {
+    height: 800px;
+    margin: 20px 0px 0px 0px;
+    padding: 0px 0px 0px 20px;
+}
+
+#topDiv {
+    height: 400px;
+}
+
+#bottomDiv {
+    height: 400px;
+}
+
+#cardHeader {
+    text-align: center;
+}
+
+#disasterContainer {
+    height: 200px;
+}
+
+#disasterButton0 {
+    margin: 5px 0px 5px 0px;
+    height: 60px;
+}
+
+#disasterButton1 {
+    margin: 5px 0px 5px 0px;
+    height: 60px;
+}
+
+#disasterButton2 {
+    margin: 5px 0px 5px 0px;
+    height: 60px;
+}
+
+#disasterButton3 {
+    margin: 5px 0px 5px 0px;
+    height: 60px;
+}
+
+#disasterButton4 {
+    margin: 5px 0px 5px 0px;
+    height: 60px;
+}
+
+#disasterButton5 {
+    margin: 5px 0px 5px 0px;
+    height: 60px;
+}
+
+#disasterButton6 {
+    margin: 5px 0px 5px 0px;
+    height: 60px;
+}
+
+#disasterButton7 {
+    margin: 5px 0px 5px 0px;
+    height: 60px;
+}
+
+#disasterButton8 {
+    margin: 5px 0px 5px 0px;
+    height: 60px;
+}
+
+#disasterButton9 {
+    margin: 5px 0px 5px 0px;
+    height: 60px;
+}
+
+#topDiv {
+    margin: 20px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
+}
+
+#headerText {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 0px 0px 0px;
+}
+
+#howToButton {
+    margin: 0px 0px 0px 280px;
+}
