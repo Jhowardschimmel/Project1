@@ -7,7 +7,20 @@ function createButtons(i, response) {
   $("#disasterDiv").append(button);
 }
 
-
+//creates job description link for <a> tag in job list
+function createJobDescriptions(j, response) {
+  let jobsDescriptionQuery = response.data[j].href;
+  //call to get job url for <a> href//
+  $.ajax({
+    url: jobsDescriptionQuery,
+    method: "GET"
+  })
+    .then(function (response) {
+      $(`#jobAnchor${j}`).attr({
+        href: response.data[0].fields.url_alias
+      })
+    })
+}
 
 
 function createEventListener(i, response, myMap, lat, lon) {
@@ -26,23 +39,24 @@ function createEventListener(i, response, myMap, lat, lon) {
       method: "GET"
     })
       .then(function (response) {
-        //console.log(response);
-        
         for (j = 0; j < response.data.length; j++) {
-         // console.log(response.data[j].fields.title);
-         console.log(response.data[j].href);
-          var newList = $("#jobsInfo").append(
-            $("<li>").text(response.data[j].fields.title)
-          )
+          $("#jobsInfo").append(
+            $("<a>").attr({
+              id: "jobAnchor" + j,
+              class: "jobsInfoElement",
+              target: "_blank"
+            })
+              .text(response.data[j].fields.title))
+          $(`#jobAnchor${j}`).wrap("<li class='jobListElement'></li>");
+          createJobDescriptions(j, response);
         }
       });
-
   });
 }
 
 //on ready
 $(document).ready(function () {
-  
+
 
   function myMap(lat, lon) {
     var mapProp = {
