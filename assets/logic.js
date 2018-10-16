@@ -17,7 +17,7 @@ function createEventListener(i, response, myMap, lat, lon) {
     $("#disDate").text(response.data[i].fields.date.created.substring(0, 10));
     $("#disLocation").text(response.data[i].fields.primary_country.name);
     $("#jobsInfo").text("");
-    $("#disDescription").text(response.data[i].fields.description);
+    $("#disDescription").html(response.data[i].fields["description-html"]);
     myMap(lat, lon);
     var localJobs = response.data[i].fields.primary_country.name;
     var jobsQuery = "https://api.reliefweb.int/v1/jobs?appname=apidoc&filter[field]=country&filter[value]=" + localJobs;
@@ -42,6 +42,7 @@ function createEventListener(i, response, myMap, lat, lon) {
 
 //on ready
 $(document).ready(function () {
+  
 
   function myMap(lat, lon) {
     var mapProp = {
@@ -65,7 +66,7 @@ $(document).ready(function () {
 
     .then(function (response) {
 
-      //console.log(response.data)
+      console.log(response.data)
 
       //iterate through the response data
       for (var i = 0; i < response.data.length; i++) {
